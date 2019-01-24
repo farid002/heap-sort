@@ -43,5 +43,5 @@ At the end, what can be learned from this repo are:
 
 # NOTE!
 
-Only maxHeapify and buildMax functions have been used in the code. Thus you can ignore the ones named "minHeapify", "buildMin", which are for you to take a look for further applications.
+Only max. version of the functions has been used (e.g.: maxHeapify and buildMax) in the code. Thus you can ignore the ones relating to min. (e.g.: "minHeapify", "buildMin"), which are for you to take a look for further applications.
 
