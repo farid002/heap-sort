@@ -1,6 +1,6 @@
 # ANALYSIS of ALGORITHMS - HEAPSORT
 
-In this project we are going to analyze working principles of Heap Sort algorithm. We are scripting and applying several functions such as Build-Heap, Heapify, Heap-Sort, Extract- Max, Extract-Min and etc. We are given 10 .csv files, which contain data of employees for 10 days. It is required to find best and worst 3 employees according to certain criteria and give the execution time for each file. There is also another file named numbers.csv that contains more than a million numbers those have to be sorted by heap-sort method.
+In this project we are going to analyze working principles of Heap Sort algorithm. Several functions such as Build-Heap, Heapify, Heap-Sort, Extract- Max, Extract-Min and etc have been scripted and analyzed. We are given 10 .csv files, which contain data of employees for 10 days. It is required to find the best and the worst 3 employees according to certain criteria and give the execution time for each file. There is also another file named numbers.csv that contains more than a million numbers those have to be sorted by heap-sort method.
 
 
 # APPLICATION AND ANALYSIS
@@ -30,13 +30,17 @@ In part C I wrote sortNumbers function which only builds a heap, then extract on
 # CONCLUSION
 At the end, what can be learned from this repo are:
 
-1) how to apply Heap Sort algorithm,
+1) applying Heap Sort algorithm,
 
-2) build "heap",
+2) building a "heap",
 
-3) do "max-heapify",
+3) doing "max-heapify" / "min-heapify",
 
 4) generate "heapSort" function,
 
 5) develop  related algorithms and etc.
+
+NOTE!
+
+Only maxHeapify and buildMax functions have been used in the code. Thus you can ignore the ones named "minHeapify", "buildMin", which are for you to take a look for further applications.
 
