@@ -1,6 +1,5 @@
 /*
 name:		Farid Huseynov
-id:			150160904
 course:		Analysis of Algorithms
 
 		Project2
@@ -17,15 +16,14 @@ using namespace std;
 
 void maxHeapify_numbers(int * num, int n, int i) {
 	int largest = i; // Initialize largest as root 
-	int l = 2 * i + 1; // left = 2*i + 1 
-	int r = 2 * i + 2; // right = 2*i + 2 
+	int l = 2 * i + 1; // left
+	int r = 2 * i + 2; // right
 
-					   // If left child is larger than root 
+	// If left child is larger than root 
 	if (l < n && num[l] > num[largest])
 		largest = l;
 
 	// If right child is larger than largest so far 
-
 	if (r < n && num[r] > num[largest])
 		largest = r;
 
@@ -49,7 +47,7 @@ int extractMax_numbers(int * num, int n) {
 	}
 	int max = num[0];
 	num[0] = num[n - 1];
-	num[n - 1] = -2147483647; //the smallest number
+	num[n - 1] = -2147483647; //the smallest number instead of neg. infinity
 	n = n - 1;
 	maxHeapify_numbers(num, n, 0);
 	return max;
@@ -65,15 +63,14 @@ int heapSize(Employee * emp) {
 }
 void minHeapify_ps(Employee * arr, int n, int i) {
 	int smallest = i; // Initialize smallest as root 
-	int l = 2 * i + 1; // left = 2*i + 1 
-	int r = 2 * i + 2; // right = 2*i + 2 
+	int l = 2 * i + 1; // left 
+	int r = 2 * i + 2; // right
 
-					   // If left child is smaller than root 
+	// If left child is smaller than root 
 	if (l < n && arr[l].ps < arr[smallest].ps)
 		smallest = l;
 
 	// If right child is smaller than smallest so far 
-
 	if (r < n && arr[r].ps < arr[smallest].ps)
 		smallest = r;
 
@@ -88,15 +85,14 @@ void minHeapify_ps(Employee * arr, int n, int i) {
 }
 void minHeapify_calls(Employee * arr, int n, int i) {
 	int smallest = i; // Initialize smallest as root 
-	int l = 2 * i + 1; // left = 2*i + 1 
-	int r = 2 * i + 2; // right = 2*i + 2 
+	int l = 2 * i + 1; // left
+	int r = 2 * i + 2; // right 
 
-					   // If left child is smaller than root 
+	// If left child is smaller than root 
 	if (l < n && arr[l].total_calls < arr[smallest].total_calls)
 		smallest = l;
 
 	// If right child is smaller than smallest so far 
-
 	if (r < n && arr[r].total_calls < arr[smallest].total_calls)
 		smallest = r;
 
@@ -111,15 +107,14 @@ void minHeapify_calls(Employee * arr, int n, int i) {
 }
 void maxHeapify_ps(Employee * arr, int n, int i) {
 	int largest = i; // Initialize largest as root 
-	int l = 2 * i + 1; // left = 2*i + 1 
-	int r = 2 * i + 2; // right = 2*i + 2 
+	int l = 2 * i + 1; // left
+	int r = 2 * i + 2; // right
 
-					   // If left child is larger than root 
+	// If left child is larger than root 
 	if (l < n && arr[l].ps > arr[largest].ps)
 		largest = l;
 
 	// If right child is larger than largest so far 
-	
 	if (r < n && arr[r].ps > arr[largest].ps)
 		largest = r;
 
@@ -134,15 +129,14 @@ void maxHeapify_ps(Employee * arr, int n, int i) {
 }
 void maxHeapify_calls(Employee * arr, int n, int i) {
 	int largest = i; // Initialize largest as root 
-	int l = 2 * i + 1; // left = 2*i + 1 
-	int r = 2 * i + 2; // right = 2*i + 2 
+	int l = 2 * i + 1; // left
+	int r = 2 * i + 2; // right 
 
-					   // If left child is larger than root 
+	// If left child is larger than root 
 	if (l < n && arr[l].total_calls > arr[largest].total_calls)
 		largest = l;
 
 	// If right child is larger than largest so far 
-
 	if (r < n && arr[r].total_calls > arr[largest].total_calls)
 		largest = r;
 
