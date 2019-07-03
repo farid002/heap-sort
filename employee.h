@@ -1,3 +1,12 @@
+/**************************************************************
+*
+*                Developed by Farid Huseynov
+*                     ITUNOM UAV Team
+*           	 All rights reserved © 2019
+*
+**************************************************************/
+
+
 #ifndef EMPLOYEE_H
 #define EMPLOYEE_H
 class Employee {
