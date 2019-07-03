@@ -1,9 +1,10 @@
-/*
-name:		Farid Huseynov
-course:		Analysis of Algorithms
-
-		Project2
-*/
+/**************************************************************
+*
+*                Developed by Farid Huseynov
+*                     ITUNOM UAV Team
+*           	 All rights reserved © 2019
+*
+**************************************************************/
 
 #include <iostream>
 #include <fstream>
